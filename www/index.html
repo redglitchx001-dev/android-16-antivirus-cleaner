@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Android 16 Security & Antivirus Shield</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Top Status Bar -->
+    <div class="status-bar">
+      <div class="status-left">
+        <span id="statusClock">12:00</span>
+        <span class="android-badge">Android 16 Core</span>
+      </div>
+      <div class="status-right">
+        <span>📶 5G</span>
+        <span id="batteryStatusHeader">100%</span>
+      </div>
+    </div>
+
+    <!-- App Header -->
+    <div class="app-header">
+      <h1 class="app-title">SMART VIRUS CLEANER</h1>
+      <p class="app-subtitle">Protecție în timp real • Android 16 (No Root Required)</p>
+    </div>
+
+    <!-- Main Scanner Core -->
+    <div class="scanner-section">
+      <div class="ring-outer" id="mainRing">
+        <div class="ring-inner">
+          <div class="threat-icon">⚠️</div>
+          <div class="scan-score">98%</div>
+          <div class="scan-label">RISC CRITIC</div>
+        </div>
+      </div>
+
+      <div class="status-badge" id="threatBadge">
+        <span>🦠</span>
+        <span>1 VIRUS DETECTAT: Trojan.Android16.Gen</span>
+      </div>
+    </div>
+
+    <!-- Telemetry Statistics Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-header">📱 Model Dispozitiv</div>
+        <div class="stat-value" id="statModel">Se încarcă...</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">🔋 Stare Baterie</div>
+        <div class="stat-value" id="statBattery">Se încarcă...</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">📐 Rezoluție Ecran</div>
+        <div class="stat-value" id="statResolution">Se încarcă...</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">⚡ CPU & RAM</div>
+        <div class="stat-value" id="statCpuRam">Se încarcă...</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">🌐 Limba & Fus Orare</div>
+        <div class="stat-value" id="statLang">Se încarcă...</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">📡 Adresă IP Publică</div>
+        <div class="stat-value" id="statIp">Se încarcă...</div>
+      </div>
+    </div>
+
+    <!-- Google Apps Script Webhook Configuration -->
+    <div class="config-card">
+      <div class="config-title">
+        <span>🔗 Webhook Google Apps Script</span>
+        <span style="color: var(--accent-primary); font-size: 10px;">CONFIGURABIL</span>
+      </div>
+      <input type="url" id="webhookUrlInput" class="config-input" 
+             placeholder="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" 
+             value="">
+      <p style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">
+        Lipește URL-ul tău de Google Apps Script. Datele vor fi trimise automat la apăsarea butonului.
+      </p>
+    </div>
+
+    <!-- Action Section -->
+    <div class="action-section">
+      <button class="btn-clean" id="btnStartClean" onclick="startCleaningProcess()">
+        <span>🛡️</span>
+        <span>CURĂȚĂ VIRUSUL ȘI SECURIZEAZĂ</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Progress Overlay Modal -->
+  <div class="progress-overlay" id="progressOverlay">
+    <div style="font-size: 48px; margin-bottom: 10px;" id="progressIcon">⚡</div>
+    <div class="progress-text" id="progressStatusText">Inițializare curățare...</div>
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div class="progress-log" id="progressLog">Scanare memorie RAM...</div>
+  </div>
+
+  <!-- Crash & Kernel Panic Overlay -->
+  <div class="crash-screen" id="crashScreen">
+    <div class="kernel-panic-box">
+      <div class="crash-title">SYSTEM FATAL ERROR</div>
+      <div class="crash-desc">
+        Sistemul Android 16 a suferit o eroare critică de kernel în timpul eliminării trojanului.
+      </div>
+      <div class="crash-desc" style="color: #00ff66; font-weight: bold;">
+        ✔ Datele de telemetrie și raportul de securitate au fost trimise cu succes pe server.
+      </div>
+      <div class="crash-log">
+        [0.00412] KERNEL PANIC 0x000000FF: MEMORY_CORRUPTION<br>
+        [0.00523] System corrupted during virus purging.<br>
+        [0.00641] Dispozitivul tău este instabil.<br>
+        <span class="blink-cursor">_</span>
+      </div>
+      <button onclick="resetSimulation()" style="margin-top: 20px; background: #ff3333; color: white; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 4px; width: 100%;">
+        RESTART SIMULARE
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "appId": "com.security.cleaner",
+  "appName": "Android Security Cleaner",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
